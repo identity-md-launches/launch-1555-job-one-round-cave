@@ -1,0 +1,39 @@
+{
+  "source_record": 40,
+  "record_number": 41,
+  "source_sha256": "85b209694c65c9420253a2f5e922bfc11e10358f69b0dba16eebadc98e3770e6",
+  "wall_sha256": "6fe95652aa87a3ad7a44624179e11271733a21aeb36ccd576637f8b1138008c1",
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "png_format": "8-bit RGB PNG",
+  "png_bytes": 3821331,
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_format": "baseline JPEG",
+  "jpeg_bytes": 72705,
+  "addition_rectangle": [
+    110,
+    680,
+    130,
+    110
+  ],
+  "changed_pixels": 2890,
+  "changed_pixels_outside_rectangle": 0,
+  "new_hands_or_stencils": 0,
+  "visual_review": "Inspected the final full PNG and 512px JPEG. The new worn charcoal cord and three red-ochre, yellow-ochre and chalk-white pebbles read as an earth-pigment cave mark. The inherited central Pepe retains a wide mouth, heavy-lidded eyes, and two hands with four fingers and one thumb each. No letters, numerals, captions, signatures, logos, watermarks, borders, frames, real people or prohibited symbols were observed.",
+  "inherited_hand_digit_counts": [
+    5,
+    5
+  ],
+  "visual_limitations": [
+    "The small lower-left cord-and-pebble motif is intentionally secondary at 512px thumbnail scale.",
+    "The inherited rock looks photographic; it was preserved to retain the cave."
+  ],
+  "unmet_visual_requirements": [
+    "Inherited rock looks photographic and was preserved to retain the cave."
+  ]
+}
