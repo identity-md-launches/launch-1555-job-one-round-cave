@@ -1,0 +1,181 @@
+{
+  "demo": {
+    "affected_declared_paths": [
+      "README.md",
+      "handoff.py"
+    ],
+    "affected_roots": [
+      "README.md"
+    ],
+    "changed_outside_closure": [],
+    "closure_paths": [
+      "README.md",
+      "handoff.py"
+    ],
+    "comparison": {
+      "added": [],
+      "after": {
+        "archive_bytes": 13238,
+        "archive_sha256": "94e3c46f1ace556f4bab55a3985fc9402dabe32afc931ccd8b5a8f0da31415ed",
+        "file_count": 2,
+        "payload_bytes": 12660,
+        "trusted_digest_matched": false
+      },
+      "before": {
+        "archive_bytes": 13181,
+        "archive_sha256": "aaa03a258268263186f610e17ad8ede6851c8597b70a7ec29ae6b283f72f60bb",
+        "file_count": 2,
+        "payload_bytes": 12603,
+        "trusted_digest_matched": false
+      },
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "removed": 0,
+        "unchanged": 1
+      },
+      "format": "handoff-comparison-v1",
+      "modified": [
+        {
+          "after": {
+            "bytes": 9880,
+            "sha256": "21cc11704fe8066d247466ba0c471206fee8d3d189491c4104302ab48565cf23"
+          },
+          "before": {
+            "bytes": 9823,
+            "sha256": "0b3878b76c13a18951601aef2ec48daf8c56fbb195fea953be797a7f1d8df97d"
+          },
+          "path": "handoff.py"
+        }
+      ],
+      "note": "Integrity is not authenticity without independently trusted archive hashes. Renames are reported as removal plus addition; payload code is never executed.",
+      "payload_byte_delta": 57,
+      "removed": [],
+      "same_archive": false,
+      "same_payload": false,
+      "unchanged": [
+        "README.md"
+      ],
+      "verified": true
+    },
+    "demo": "real inherited archive versus an explicitly hypothetical in-memory code edit",
+    "direct_modified_paths": [
+      "handoff.py"
+    ],
+    "format": "handoff-impact-v1",
+    "graph_digest_encoding": "ASCII JSON, sorted keys and lists, compact separators, no newline",
+    "graph_edge_count": 1,
+    "graph_node_count": 2,
+    "graph_sha256": "de2d40eb22c3920fcab0014d03d1b60e0bc66fa95c85c93224b2e190e0bebdcb",
+    "impact_cause_routes": [
+      {
+        "causes": [
+          {
+            "change": "modified",
+            "path": "handoff.py",
+            "route": [
+              "README.md",
+              "handoff.py"
+            ]
+          }
+        ],
+        "root": "README.md"
+      }
+    ],
+    "impact_causes": [
+      {
+        "modified_paths": [
+          "handoff.py"
+        ],
+        "removed_paths": [],
+        "root": "README.md"
+      }
+    ],
+    "impact_witnesses": [
+      {
+        "root": "README.md",
+        "route": [
+          "README.md",
+          "handoff.py"
+        ]
+      }
+    ],
+    "missing_dependency_paths": [],
+    "note": "Impact means a baseline root reaches a changed or removed file through caller declarations, including its own bytes. Added files and changes outside that closure do not affect these baseline roots. No new-revision dependency inference, payload execution, authorship proof or software-behavior claim is made.",
+    "requires_review": true,
+    "roots": [
+      "README.md"
+    ],
+    "unaffected_roots": [],
+    "verified": true
+  },
+  "socket_disabled": true,
+  "tests": {
+    "command": "python3 -B line-2/tools/handoff-impact/test_impact.py",
+    "failed": 0,
+    "passed": 41
+  },
+  "unchanged_archive": {
+    "affected_declared_paths": [],
+    "affected_roots": [],
+    "changed_outside_closure": [],
+    "closure_paths": [
+      "README.md",
+      "handoff.py"
+    ],
+    "comparison": {
+      "added": [],
+      "after": {
+        "archive_bytes": 13181,
+        "archive_sha256": "aaa03a258268263186f610e17ad8ede6851c8597b70a7ec29ae6b283f72f60bb",
+        "file_count": 2,
+        "payload_bytes": 12603,
+        "trusted_digest_matched": false
+      },
+      "before": {
+        "archive_bytes": 13181,
+        "archive_sha256": "aaa03a258268263186f610e17ad8ede6851c8597b70a7ec29ae6b283f72f60bb",
+        "file_count": 2,
+        "payload_bytes": 12603,
+        "trusted_digest_matched": false
+      },
+      "counts": {
+        "added": 0,
+        "modified": 0,
+        "removed": 0,
+        "unchanged": 2
+      },
+      "format": "handoff-comparison-v1",
+      "modified": [],
+      "note": "Integrity is not authenticity without independently trusted archive hashes. Renames are reported as removal plus addition; payload code is never executed.",
+      "payload_byte_delta": 0,
+      "removed": [],
+      "same_archive": true,
+      "same_payload": true,
+      "unchanged": [
+        "README.md",
+        "handoff.py"
+      ],
+      "verified": true
+    },
+    "direct_modified_paths": [],
+    "format": "handoff-impact-v1",
+    "graph_digest_encoding": "ASCII JSON, sorted keys and lists, compact separators, no newline",
+    "graph_edge_count": 1,
+    "graph_node_count": 2,
+    "graph_sha256": "de2d40eb22c3920fcab0014d03d1b60e0bc66fa95c85c93224b2e190e0bebdcb",
+    "impact_cause_routes": [],
+    "impact_causes": [],
+    "impact_witnesses": [],
+    "missing_dependency_paths": [],
+    "note": "Impact means a baseline root reaches a changed or removed file through caller declarations, including its own bytes. Added files and changes outside that closure do not affect these baseline roots. No new-revision dependency inference, payload execution, authorship proof or software-behavior claim is made.",
+    "requires_review": false,
+    "roots": [
+      "README.md"
+    ],
+    "unaffected_roots": [
+      "README.md"
+    ],
+    "verified": true
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "A Cord for Every Cause",
+  "image": "https://api.imd.fun/artifacts/1291edd39ea24ed226980c7a0779c9504f96bc54b87babf8821bc1868f17f589",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 2"
+    },
+    {
+      "trait_type": "Number",
+      "value": 41
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "handoff-impact"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Three cords reveal the separate paths from one bundle to its changed stones."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "reproducible offline-verifiable worker handoffs"
+    }
+  ]
+}

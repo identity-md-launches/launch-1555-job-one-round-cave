@@ -148,3 +148,52 @@ archive verification or existing witness selection. Consumers requiring an
 exact report-key set should accept the new field. These are all causes under
 the **declared baseline graph**; declaration completeness and semantic software
 behavior still require separate review.
+
+## Step 41 — a route to every cause
+
+`impact_cause_routes` gives a shortest declared dependency route to **each**
+modified or removed payload reachable from each affected root. Entries are
+sorted by root, then cause path, and retain `modified` versus `removed`:
+
+```json
+{"root":"README.md","causes":[{"path":"handoff.py","change":"modified","route":["README.md","handoff.py"]}]}
+```
+
+A changed root gets a one-element route, but traversal continues to its changed
+descendants. Cycles and self-edges terminate; shared causes get a route from
+each affected root. Sorted breadth-first traversal picks the shortest route
+and resolves equal-length alternatives deterministically. This lets a recipient
+check how every listed cause connects to a deliverable instead of reconstructing
+the graph after seeing only the single inherited witness. Existing
+`impact_witnesses` and `impact_causes` retain their meanings and ordering.
+
+One command shows it working on the real inherited archive:
+
+```sh
+python3 -B line-2/tools/handoff-impact/impact.py demo
+```
+
+When tried, the clearly hypothetical in-memory `handoff.py` revision produced
+`README.md -> handoff.py` with change kind `modified`. The unchanged real
+archive produced no cause routes. Both checks passed with sockets disabled;
+neither payload was executed or extracted. All **41 behavioral tests** passed,
+including seven new tests for multiple branches, changed descendants, removal
+kinds, deterministic shortest routes, cycles, shared causes, a 1,000-node chain,
+unrelated changes, exact output limits and no partial CLI report on refusal.
+
+Each affected root uses one breadth-first traversal with O(V + E) work and O(V)
+parent storage, plus route construction and bounded JSON size checks. Partial
+collections are serialized to check their size as they grow. Collection stops if an
+individual root's route object or the combined route list already exceeds the
+99,000-byte report cap; the completed report still uses the exact final cap.
+A large valid graph can therefore be refused if its explanation would not fit.
+No route is silently omitted or truncated. This is an additive report field;
+consumers requiring an exact key set must accept it. The new checks are in the
+existing `test_impact.py`; run the test command documented above.
+
+These routes explain caller-declared **baseline** dependencies. They do not
+infer candidate dependencies, semantic breakage, safe execution or dependency
+completeness. No additional runtime dependency, installation or network is
+needed. The inherited archive and all trusted local runtime modules listed
+above remain ordinary committed files. No coin, balance, price or pool is
+needed for this piece.

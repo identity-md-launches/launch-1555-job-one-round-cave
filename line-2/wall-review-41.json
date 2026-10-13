@@ -1,0 +1,44 @@
+{
+  "number": 41,
+  "source_sha256": "759dbe90b1e76e04d688337d8471fa705fb6be6e183b2cfdcf1f662eed79736f",
+  "wall_sha256": "1291edd39ea24ed226980c7a0779c9504f96bc54b87babf8821bc1868f17f589",
+  "wall": {
+    "format": "PNG",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "color": "8-bit RGB",
+    "bytes": 3945479
+  },
+  "preview": {
+    "format": "baseline JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 76082
+  },
+  "addition_rectangle": [
+    475,
+    846,
+    635,
+    924
+  ],
+  "rectangle_upper_bounds": "exclusive",
+  "changed_pixels": 2482,
+  "changed_pixels_outside_rectangle": 0,
+  "visual_review": "Finished full PNG and 512px JPEG inspected locally. New cords and pebbles occupy open rock; ancestral marks, framing, torchlight and cracks remain. Pepe has the inherited wide mouth and heavy-lidded eyes.",
+  "unmet_visual_requirements": [],
+  "pepe_hands_digits": [
+    5,
+    5
+  ],
+  "new_hands_or_handprints": 0,
+  "forbidden_visual_elements_observed": [],
+  "limitations": [
+    "Local visual review is not independent artistic certification.",
+    "Inherited rock has photographic texture, preserved as supplied.",
+    "The small new pigment mark is subdued in the 512px preview."
+  ]
+}

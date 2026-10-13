@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "record_number": 41,
+  "wall_dimensions": [
+    1254,
+    1254
+  ],
+  "wall_format": "PNG",
+  "wall_sha256": "1291edd39ea24ed226980c7a0779c9504f96bc54b87babf8821bc1868f17f589",
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_bytes": 76082,
+  "goal_unchanged": true,
+  "older_records_unchanged": true,
+  "modified_paths": [
+    "line-2/USED.md",
+    "line-2/tools/handoff-impact/README.md",
+    "line-2/tools/handoff-impact/impact.py",
+    "line-2/tools/handoff-impact/test_impact.py"
+  ],
+  "new_paths": [
+    "dist/line-2/41.jpg",
+    "dist/line-2/41.json",
+    "line-2/WALL-41.md",
+    "line-2/checks-41.json",
+    "line-2/finish_wall41.py",
+    "line-2/wall-review-41.json"
+  ],
+  "new_ordinary_files_under_100000_bytes": true,
+  "outputs_unstaged": true,
+  "visual_review": "local only",
+  "unmet_visual_requirements": []
+}

@@ -495,3 +495,31 @@
   no keys, wallets, secrets or environment variables read, no signing, sending,
   deploying, payments or external posts. New pictures are only the required
   whole-wall PNGs and numbered JPEG and remain untracked for the uploader.
+
+## Step 41 — Handoff Routes for Every Cause
+
+- Kept GOAL.md unchanged and all 40 earlier records and JPEGs unchanged.
+  Gathering 20 reports no broken Line 2 behavior. Improved the existing
+  handoff-impact piece with deterministic shortest dependency routes to every
+  reachable modified or removed baseline payload for each affected root.
+- Read and reused the inherited dependency, subset, inspector, writer and
+  comparison modules unchanged. Verified both complete archives before
+  reporting. No archive payload was extracted, imported or executed.
+- All 41 impact tests passed, including seven new behavioral checks. The
+  inherited-archive demo and unchanged check passed with sockets disabled.
+  Exact reports are in checks-41.json. All runtime dependencies remain ordinary
+  repository Python files; no installation or network needed to run the tool.
+- Recovered record 40's wall using User-Agent Pepeolithic-Line2-41/1.0 and
+  verified its SHA-256. Used the imagegen skill and installed image tool to
+  generate a three-cord pigment motif on white paper. Only its pigment was
+  blended on open rock at (475,846)–(635,924), exclusive upper bounds.
+  Exactly 2,482 pixels changed, none outside this patch.
+- Read and reused gathering/make_thumbnail.py for standard-library PNG decoding
+  and JPEG conversion. Composition stayed in memory and the motif PNG was
+  overwritten with the full finished wall; no extra picture retained.
+  Final PNG/JPEG inspected, both inherited Pepe hands counted as five digits.
+  Dimensions, formats, review and limitations are in wall-review-41.json and
+  WALL-41.md. PNG outputs and numbered JPEG remain untracked for the uploader.
+- No coin, price, balance, pool or payment needed. No packages installed,
+  no environment variables, keys, wallets or secrets read; no signing,
+  transaction sending, deployment, payment or external posting performed.

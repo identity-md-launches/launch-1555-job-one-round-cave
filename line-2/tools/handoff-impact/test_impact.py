@@ -137,6 +137,91 @@ class ImpactTests(unittest.TestCase):
         self.assertEqual(report['missing_dependency_paths'], ['leaf'])
         self.assertEqual(report['affected_roots'], ['root'])
 
+    def test_cause_routes_every_branch_and_change_kind(self):
+        self.document['roots'] = ['root']
+        self.document['dependencies']['root'] = ['other', 'mid']
+        files = self.changed(root=b'x', leaf=b'x')
+        del files['other']
+        report = self.analyze(files)
+        self.assertEqual(report['impact_cause_routes'], [{'root': 'root', 'causes': [
+            {'path': 'leaf', 'change': 'modified', 'route': ['root', 'mid', 'leaf']},
+            {'path': 'other', 'change': 'removed', 'route': ['root', 'other']},
+            {'path': 'root', 'change': 'modified', 'route': ['root']}]}])
+
+    def test_cause_routes_shortest_deterministic_diamond(self):
+        self.document['roots'] = ['root']
+        self.document['dependencies']['root'] = ['other', 'mid']
+        self.document['dependencies']['other'] = ['leaf']
+        expected = [{'root': 'root', 'causes': [
+            {'path': 'leaf', 'change': 'modified', 'route': ['root', 'mid', 'leaf']}]}]
+        self.assertEqual(self.analyze(self.changed(leaf=b'x'))['impact_cause_routes'], expected)
+        self.document['dependencies']['root'].reverse()
+        self.assertEqual(self.analyze(self.changed(leaf=b'x'))['impact_cause_routes'], expected)
+        self.document['dependencies']['root'].append('leaf')
+        expected[0]['causes'][0]['route'] = ['root', 'leaf']
+        self.assertEqual(self.analyze(self.changed(leaf=b'x'))['impact_cause_routes'], expected)
+
+    def test_cause_routes_cycles_self_edges_shared_and_removed_root(self):
+        self.document['dependencies']['leaf'] = ['root', 'leaf']
+        self.document['dependencies']['other'] = ['leaf']
+        files = self.changed(leaf=b'x')
+        del files['root']
+        report = self.analyze(files)
+        self.assertEqual(report['impact_cause_routes'], [
+            {'root': 'other', 'causes': [
+                {'path': 'leaf', 'change': 'modified', 'route': ['other', 'leaf']},
+                {'path': 'root', 'change': 'removed', 'route': ['other', 'leaf', 'root']}]},
+            {'root': 'root', 'causes': [
+                {'path': 'leaf', 'change': 'modified', 'route': ['root', 'mid', 'leaf']},
+                {'path': 'root', 'change': 'removed', 'route': ['root']}]}])
+
+    def test_cause_routes_empty_and_unrelated(self):
+        self.document['roots'] = ['root']
+        self.assertEqual(self.analyze()['impact_cause_routes'], [])
+        self.assertEqual(self.analyze(self.changed(other=b'x', new=b'x'))['impact_cause_routes'], [])
+
+    def test_cause_routes_deep_iterative_graph(self):
+        graph = {'n%03d' % n: ['n%03d' % (n+1)] for n in range(999)}
+        graph['n999'] = ['n000']
+        result = impact.cause_routes(graph, 'n000', {'n999'}, set())
+        route = result['causes'][0]['route']
+        self.assertEqual(route, ['n%03d' % n for n in range(1000)])
+
+    def test_cause_routes_bound_collection_before_all_roots(self):
+        with patch.object(impact, 'MAX_REPORT_BYTES', 1):
+            with self.assertRaisesRegex(ValueError, 'report'):
+                impact.cause_routes({'root': ['leaf'], 'leaf': []}, 'root', {'leaf'}, set())
+        # Each entry alone fits; their combined list must fail during collection.
+        self.document['dependencies']['other'] = ['leaf']
+        first = impact.cause_routes(self.document['dependencies'], 'other', {'leaf'}, set())
+        second = impact.cause_routes(self.document['dependencies'], 'root', {'leaf'}, set())
+        limit = max(len(impact.encode(first)), len(impact.encode(second)))
+        with patch.object(impact, 'MAX_REPORT_BYTES', limit):
+            with self.assertRaisesRegex(ValueError, 'report'):
+                self.analyze(self.changed(leaf=b'x'))
+
+    def test_cause_routes_receipt_agrees_with_causes_and_budget(self):
+        self.document['dependencies']['other'] = ['leaf']
+        report = self.analyze(self.changed(root=b'x', mid=b'x', leaf=b'x'))
+        for entry, causes in zip(report['impact_cause_routes'], report['impact_causes']):
+            self.assertEqual(entry['root'], causes['root'])
+            self.assertEqual([c['path'] for c in entry['causes']], causes['modified_paths'])
+            for cause in entry['causes']:
+                self.assertEqual(cause['route'][0], entry['root'])
+                self.assertEqual(cause['route'][-1], cause['path'])
+                for source, target in zip(cause['route'], cause['route'][1:]):
+                    self.assertIn(target, self.document['dependencies'][source])
+        size = len(impact.encode(report))
+        with patch.object(impact, 'MAX_REPORT_BYTES', size):
+            self.assertEqual(self.analyze(self.changed(root=b'x', mid=b'x', leaf=b'x')), report)
+        with patch.object(impact, 'MAX_REPORT_BYTES', size-1):
+            paths = self.fixtures()
+            Path(paths[1]).write_bytes(impact.WRITER.build(self.changed(root=b'x', mid=b'x', leaf=b'x')))
+            status, out, err = self.cli(['check', *paths])
+            self.assertEqual(status, 1)
+            self.assertEqual(out, '')
+            self.assertIn('report', err)
+
     def test_removed_root(self):
         files = dict(self.files)
         del files['root']

@@ -61,6 +61,31 @@ def causes(graph, root, modified, removed):
             'removed_paths': sorted(reached & removed)}
 
 
+def cause_routes(graph, root, modified, removed):
+    """Shortest route to each reachable cause, with one BFS per root."""
+    parents, pending = {root: None}, deque([root])
+    while pending:
+        path = pending.popleft()
+        # Keep traversing beyond changed nodes to explain every descendant.
+        for dependency in sorted(graph[path]):
+            if dependency not in parents:
+                parents[dependency] = path
+                pending.append(dependency)
+    routes = []
+    result = {'root': root, 'causes': routes}
+    for path in sorted(set(parents) & (modified | removed)):
+        route, cursor = [], path
+        while cursor is not None:
+            route.append(cursor)
+            cursor = parents[cursor]
+        routes.append({'path': path, 'change': 'removed' if path in removed else 'modified',
+                       'route': list(reversed(route))})
+        # Refuse large route sets while collecting them, not after all roots.
+        if len(encode(result)) > MAX_REPORT_BYTES:
+            raise ValueError('impact report exceeds 99000-byte output limit')
+    return result
+
+
 def normalize(document, limits):
     if (not isinstance(document, dict)
             or set(document) != {'format', 'roots', 'dependencies'}
@@ -123,6 +148,11 @@ def analyze_bytes(before, after, document, before_sha256=None, after_sha256=None
             impacted.add(path)
             pending.extend(reverse[path])
     affected_roots = sorted(set(roots) & impacted)
+    route_reports = []
+    for root in affected_roots:
+        route_reports.append(cause_routes(graph, root, modified, removed))
+        if len(encode(route_reports)) > MAX_REPORT_BYTES:
+            raise ValueError('impact report exceeds 99000-byte output limit')
     report = {
         'format': 'handoff-impact-v1', 'verified': True,
         'graph_sha256': graph_hash,
@@ -135,6 +165,7 @@ def analyze_bytes(before, after, document, before_sha256=None, after_sha256=None
             for root in affected_roots],
         'impact_causes': [causes(graph, root, modified, removed)
                           for root in affected_roots],
+        'impact_cause_routes': route_reports,
         'unaffected_roots': sorted(set(roots) - impacted),
         'affected_declared_paths': sorted(impacted),
         'direct_modified_paths': sorted(modified & closure),
