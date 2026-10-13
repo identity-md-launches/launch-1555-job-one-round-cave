@@ -1,1 +1,30 @@
-{"name":"Not painted yet","image":"https://api.imd.fun/artifacts/9cbb7bb2a41efa92e010921f287819c9ffb02c4375fa9496c8468701d8e00cc5","attributes":[{"trait_type":"Cave","value":"Base"}]}
+{
+  "name": "The Tied Bundle",
+  "image": "https://api.imd.fun/artifacts/482ab32c7c964306fd23f19a36ad7d5bdb3965b313f891e65c08b38a2e8f84dc",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 3"
+    },
+    {
+      "trait_type": "Number",
+      "value": 12
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "canonical-envelope"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe packs loose pieces into one tied bundle whose shape can be checked."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Offline EIP-1559 transaction decoding"
+    }
+  ]
+}

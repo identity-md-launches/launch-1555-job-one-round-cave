@@ -1,1 +1,30 @@
-{"name":"Not painted yet","image":"https://api.imd.fun/artifacts/9cbb7bb2a41efa92e010921f287819c9ffb02c4375fa9496c8468701d8e00cc5","attributes":[{"trait_type":"Cave","value":"Base"}]}
+{
+  "name": "The Guarded Pebble",
+  "image": "https://api.imd.fun/artifacts/b2c8c5ec72421f0b3767c81fcf8cdf254edcaf7b1daa3abdcd9073097f7ad708",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 1"
+    },
+    {
+      "trait_type": "Number",
+      "value": 12
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "pinned-transport-check"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "An ochre observation stays enclosed between two remembered stones."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "portable live Ethereum state snapshots"
+    }
+  ]
+}

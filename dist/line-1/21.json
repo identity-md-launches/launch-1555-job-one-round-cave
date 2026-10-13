@@ -1,1 +1,30 @@
-{"name":"Not painted yet","image":"https://api.imd.fun/artifacts/9cbb7bb2a41efa92e010921f287819c9ffb02c4375fa9496c8468701d8e00cc5","attributes":[{"trait_type":"Cave","value":"Base"}]}
+{
+  "name": "The Bound Three",
+  "image": "https://api.imd.fun/artifacts/6fe95652aa87a3ad7a44624179e11271733a21aeb36ccd576637f8b1138008c1",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 1"
+    },
+    {
+      "trait_type": "Number",
+      "value": 21
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "proof-bundle-manifest"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Three pebbles tied by one cord keep a proof bundle together for another reader."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "portable live Ethereum state snapshots"
+    }
+  ]
+}

@@ -1,1 +1,30 @@
-{"name":"Not painted yet","image":"https://api.imd.fun/artifacts/9cbb7bb2a41efa92e010921f287819c9ffb02c4375fa9496c8468701d8e00cc5","attributes":[{"trait_type":"Cave","value":"Base"}]}
+{
+  "name": "The Shared Moment",
+  "image": "https://api.imd.fun/artifacts/1476d8d9e63de6ceb4ec2a01a9923b14c460a4c9a4cfa9a98f1ba7317e1fcca5",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 1"
+    },
+    {
+      "trait_type": "Number",
+      "value": 9
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "block-audit"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Two stones return to one remembered height."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "portable live Ethereum state snapshots"
+    }
+  ]
+}

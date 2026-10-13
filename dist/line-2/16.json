@@ -1,1 +1,30 @@
-{"name":"Not painted yet","image":"https://api.imd.fun/artifacts/9cbb7bb2a41efa92e010921f287819c9ffb02c4375fa9496c8468701d8e00cc5","attributes":[{"trait_type":"Cave","value":"Base"}]}
+{
+  "name": "The Chosen Reeds",
+  "image": "https://api.imd.fun/artifacts/1291ac6e418349f7e78b4908ed9eebece007ed58e0ab00d0733150054bc2aebc",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 2"
+    },
+    {
+      "trait_type": "Number",
+      "value": 16
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "handoff-subset"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "A few reeds are bound apart so another worker can carry only what they need."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "reproducible offline-verifiable worker handoffs"
+    }
+  ]
+}

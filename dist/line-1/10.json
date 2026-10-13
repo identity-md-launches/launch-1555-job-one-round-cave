@@ -1,1 +1,30 @@
-{"name":"Not painted yet","image":"https://api.imd.fun/artifacts/9cbb7bb2a41efa92e010921f287819c9ffb02c4375fa9496c8468701d8e00cc5","attributes":[{"trait_type":"Cave","value":"Base"}]}
+{
+  "name": "The Batch Basket",
+  "image": "https://api.imd.fun/artifacts/8dd96de42f0d35647b2361c0c8de7ec819965ad95941ebe36075926a2326b712",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 1"
+    },
+    {
+      "trait_type": "Number",
+      "value": 10
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "batch-capture"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "One charcoal basket holds several stones from the same remembered moment."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "portable live Ethereum state snapshots"
+    }
+  ]
+}

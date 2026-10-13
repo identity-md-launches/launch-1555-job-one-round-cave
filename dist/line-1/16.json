@@ -1,1 +1,30 @@
-{"name":"Not painted yet","image":"https://api.imd.fun/artifacts/9cbb7bb2a41efa92e010921f287819c9ffb02c4375fa9496c8468701d8e00cc5","attributes":[{"trait_type":"Cave","value":"Base"}]}
+{
+  "name": "The Measured Pebbles",
+  "image": "https://api.imd.fun/artifacts/0a8078c557049a90902503e5e695383af11f596e5a2d040953b4f7ca4e14dfdb",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 1"
+    },
+    {
+      "trait_type": "Number",
+      "value": 16
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "block-field-crosscheck"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Two ochre pebbles balance while saved observers compare the same fee and gas."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "portable live Ethereum state snapshots"
+    }
+  ]
+}

@@ -1,1 +1,30 @@
-{"name":"Not painted yet","image":"https://api.imd.fun/artifacts/9cbb7bb2a41efa92e010921f287819c9ffb02c4375fa9496c8468701d8e00cc5","attributes":[{"trait_type":"Cave","value":"Base"}]}
+{
+  "name": "The Curved Comparison",
+  "image": "https://api.imd.fun/artifacts/4b1e252d0d0695b594fee75ea2eea85da43f611b8f6ee62f769023b95c9cb76d",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 1"
+    },
+    {
+      "trait_type": "Number",
+      "value": 6
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "snapshot-compare"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Two uneven pebble clusters joined by a curved cord compare anchored observations." 
+    },
+    {
+      "trait_type": "One thing",
+      "value": "portable live Ethereum state snapshots"
+    }
+  ]
+}

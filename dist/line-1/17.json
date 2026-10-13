@@ -1,1 +1,30 @@
-{"name":"Not painted yet","image":"https://api.imd.fun/artifacts/9cbb7bb2a41efa92e010921f287819c9ffb02c4375fa9496c8468701d8e00cc5","attributes":[{"trait_type":"Cave","value":"Base"}]}
+{
+  "name": "Stones in Time",
+  "image": "https://api.imd.fun/artifacts/3b54f2fc823ce3f6eb893f83724257dd3cf66e3874cbde03758179899cf520b5",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 1"
+    },
+    {
+      "trait_type": "Number",
+      "value": 17
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "snapshot-timeline"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Three ascending stones trace saved ZTO observations through time."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "portable live Ethereum state snapshots"
+    }
+  ]
+}
