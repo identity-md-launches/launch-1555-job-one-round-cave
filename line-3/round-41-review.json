@@ -1,0 +1,60 @@
+{
+  "wall": {
+    "paths": [
+      "artifacts/line-3/wall-v22.png",
+      "artifacts/line-3/wall.png"
+    ],
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "bytes": 3968730,
+    "sha256": "4d519baf92f45fe74ae4850cc625d1f918afc86b1fe32110f5bea706c54ef6aa"
+  },
+  "thumbnail": {
+    "path": "dist/line-3/41.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 76029
+  },
+  "preservation": {
+    "inheritedRecord": 40,
+    "inheritedSha256": "a97d9155df1be2db5cdaa1fbba5344dccd202dc4e591e8eb6e61a4e918870b45",
+    "editRectangleXYXY": [
+      65,
+      240,
+      220,
+      385
+    ],
+    "changedPixels": 4769,
+    "changedPixelsOutsideRectangle": 0
+  },
+  "generatedInsert": {
+    "format": "PNG",
+    "mode": "RGBA",
+    "width": 1199,
+    "height": 1312,
+    "sourceSha256": "ce8ddfc09a781ed73463ccf06de6d47dd1b36816c5f3dd59cd0c0736c29d78ab",
+    "sourceCropXYXY": [
+      303,
+      225,
+      990,
+      1053
+    ]
+  },
+  "visualReview": {
+    "reviewed": true,
+    "inspected": [
+      "full finished PNG",
+      "512-pixel JPEG",
+      "in-memory inherited hand close-ups"
+    ],
+    "mainFigure": "Inherited wide-mouthed heavy-lidded Pepe preserved pixel-identically.",
+    "digits": "Five digits per visible inherited Pepe hand; no new hand or handprint.",
+    "prohibitedContentObserved": false,
+    "ancestralMarks": "All preserved; new pigment only on vacant left stone.",
+    "limitation": "Inherited rock has photographic texture; new motif is flat earth pigment. Local visual review is not independent certification."
+  },
+  "unmetVisualRequirements": []
+}

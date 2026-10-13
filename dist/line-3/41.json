@@ -1,0 +1,30 @@
+{
+  "name": "The Sequence and the Bowl",
+  "image": "https://api.imd.fun/artifacts/4d519baf92f45fe74ae4850cc625d1f918afc86b1fe32110f5bea706c54ef6aa",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 3"
+    },
+    {
+      "trait_type": "Number",
+      "value": 41
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "transaction-sequence"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe follows a cord of stones and gathers their provisions into one bowl."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Offline EIP-1559 transaction decoding"
+    }
+  ]
+}

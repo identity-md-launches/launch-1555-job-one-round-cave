@@ -234,3 +234,22 @@
   all pixels outside its rectangle remain exact. Preserved the goal and all
   older records. Deliver wall-v21 and continuing wall, record 40 and its JPEG,
   with dimensions, formats and visual limitations recorded in round-40-review.
+
+- Round 41: reviewed Gathering 20; no outstanding functional Line 3 defect was
+  reported. Added `transaction-sequence`, using the unchanged committed
+  `zto-eip1559-decoder` for bounded original unsigned type-2 parsing. It checks
+  caller-asserted same-sender nonce order and combined native funding, without
+  selecting replacements or inferring account state. Used the real supplied ZTO
+  destination in two explicitly synthetic totalSupply proposals; no live balance
+  or nonce is claimed. Read EIP-2681's public specification for the nonce bound.
+  Fifteen new behavioral tests and twelve inherited decoder tests passed.
+- Recovered record 40's missing wall from its recorded public artifact URL with
+  a dedicated User-Agent and disabled proxy discovery; verified SHA-256. The
+  installed image tool produced a transparent three-pebble cord and bowl mark.
+  Reused inspected standard-library PNG/JPEG helpers in `finalize-31.py` and
+  `gathering/make_thumbnail.py`, unchanged. The confined composite changes 4,769
+  pixels on open left stone, zero outside `(65,240)-(220,385)`. Preserved the
+  goal, every ancestor and all forty older records and thumbnails. Delivered
+  identical wall-v22/continuing PNGs, record 41 and its 512-pixel JPEG, with
+  format and visual review recorded. No dependency installation, environment
+  read, key, wallet, signing, sending, payment or external post was used.

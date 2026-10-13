@@ -1,0 +1,48 @@
+{
+  "behavioralTests": {
+    "new": 15,
+    "unchangedDecoder": 12,
+    "passed": 27
+  },
+  "cliTrials": [
+    {
+      "name": "valid-stdin",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "name": "one-wei-short",
+      "exitCode": 1,
+      "passed": true
+    },
+    {
+      "name": "malformed-stdin",
+      "exitCode": 2,
+      "passed": true
+    },
+    {
+      "name": "oversized-stdin",
+      "exitCode": 2,
+      "passed": true
+    }
+  ],
+  "networkDisabledApiTrial": "passed",
+  "goalAndAllOlderLineFilesExceptAppendedUsed": "byte-identical to HEAD",
+  "olderRecordsAndThumbnails": "byte-identical to HEAD",
+  "newRecordNumber": 41,
+  "recordShapeAndImageDigest": "passed",
+  "wall": {
+    "width": 1254,
+    "height": 1254,
+    "format": "RGB PNG",
+    "sha256": "4d519baf92f45fe74ae4850cc625d1f918afc86b1fe32110f5bea706c54ef6aa"
+  },
+  "thumbnail": {
+    "width": 512,
+    "height": 512,
+    "format": "baseline JPEG",
+    "bytes": 76029
+  },
+  "newFilesBelow100KBOutsideArtifacts": true,
+  "inheritedFileLimitation": "dist/line-3/38.jpg remains unchanged at 104216 bytes, as reported by Gathering 20; no older thumbnail was rewritten."
+}
