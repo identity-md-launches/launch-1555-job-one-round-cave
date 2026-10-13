@@ -1,0 +1,45 @@
+{
+  "source_record": 20,
+  "record_number": 21,
+  "source_sha256": "31ac533de1248d724e1b64757f2d00b921840e1f12f59abc6e4d1ad746dc6ca5",
+  "generated_sha256": "12b59312248d9c5c71638c57dbebd039c7abe4893d11d97ea329447192f75a9d",
+  "wall_sha256": "14c07a9c84fbc0c070a751f85695d963ad9b729268c61f97da388a53566bb90d",
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "png_format": "8-bit RGB PNG",
+  "png_bytes": 3879895,
+  "generated_dimensions": [
+    1024,
+    1024
+  ],
+  "motif_crop": [
+    49,
+    353,
+    990,
+    682
+  ],
+  "addition_rectangle": [
+    480,
+    1145,
+    215,
+    65
+  ],
+  "changed_pixels": 4729,
+  "changed_pixels_outside_rectangle": 0,
+  "method": "Installed image tool opaque white pigment insert; near-white backdrop omitted, pigment area-averaged into charcoal, ochre and chalk over vacant lower rock. Original pixels preserved everywhere else.",
+  "visual_review": "Finished PNG inspected: lower pigment loop occupies vacant rock. Pepe has a wide mouth and heavy-lidded eyes; each inherited hand has four fingers and one opposing thumb. No added hands or handprints. No text, digits, logo, signature, watermark, border, frame, real people or prohibited symbols observed. Existing rock has inherited photographic texture; the added mark is flat worn earth pigment.",
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_format": "baseline JPEG",
+  "jpeg_bytes": 70592,
+  "inherited_hand_digit_counts": [
+    5,
+    5
+  ],
+  "new_hand_or_handprint_count": 0,
+  "unmet_visual_requirements": []
+}

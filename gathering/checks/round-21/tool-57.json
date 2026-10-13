@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_capture_duplicates_normalized (test_audit.ReceiptAuditTests.test_capture_duplicates_normalized) ... ok\ntest_changed_sender (test_audit.ReceiptAuditTests.test_changed_sender) ... ok\ntest_changed_transfer_value (test_audit.ReceiptAuditTests.test_changed_transfer_value) ... ok\ntest_collect_exact_reads_and_decoded_block_number (test_audit.ReceiptAuditTests.test_collect_exact_reads_and_decoded_block_number) ... ok\ntest_demo_refuses_live_flags (test_audit.ReceiptAuditTests.test_demo_refuses_live_flags) ... ok\ntest_duplicate_and_reversed_receipt_logs_rejected (test_audit.ReceiptAuditTests.test_duplicate_and_reversed_receipt_logs_rejected) ... ok\ntest_empty_capture_not_checked (test_audit.ReceiptAuditTests.test_empty_capture_not_checked) ... ok\ntest_every_log_metadata_checked (test_audit.ReceiptAuditTests.test_every_log_metadata_checked) ... ok\ntest_evidence_schema_order_and_timestamp (test_audit.ReceiptAuditTests.test_evidence_schema_order_and_timestamp) ... ok\ntest_extra_transfer_in_existing_transaction (test_audit.ReceiptAuditTests.test_extra_transfer_in_existing_transaction) ... ok\ntest_failed_receipt_has_missing_events (test_audit.ReceiptAuditTests.test_failed_receipt_has_missing_events) ... ok\ntest_failed_receipt_with_logs_rejected (test_audit.ReceiptAuditTests.test_failed_receipt_with_logs_rejected) ... ok\ntest_hex_and_receipt_types_rejected (test_audit.ReceiptAuditTests.test_hex_and_receipt_types_rejected) ... ok\ntest_invalid_saved_summary_fails_before_network (test_audit.ReceiptAuditTests.test_invalid_saved_summary_fails_before_network) ... ok\ntest_log_data_topics_and_budget (test_audit.ReceiptAuditTests.test_log_data_topics_and_budget) ... ok\ntest_malformed_target_transfer_rejected (test_audit.ReceiptAuditTests.test_malformed_target_transfer_rejected) ... ok\ntest_missing_receipt_unavailable (test_audit.ReceiptAuditTests.test_missing_receipt_unavailable) ... ok\ntest_missing_transfer (test_audit.ReceiptAuditTests.test_missing_transfer) ... ok\ntest_network_error_no_partial_stdout (test_audit.ReceiptAuditTests.test_network_error_no_partial_stdout) ... ok\ntest_no_mutation (test_audit.ReceiptAuditTests.test_no_mutation) ... ok\ntest_null_receipt_cli_exit_one (test_audit.ReceiptAuditTests.test_null_receipt_cli_exit_one) ... ok\ntest_other_event_same_token_counted_only (test_audit.ReceiptAuditTests.test_other_event_same_token_counted_only) ... ok\ntest_real_demo_has_no_network (test_audit.ReceiptAuditTests.test_real_demo_has_no_network) ... ok\ntest_receipt_moved_to_new_block (test_audit.ReceiptAuditTests.test_receipt_moved_to_new_block) ... ok\ntest_removed_or_missing_flag_rejected (test_audit.ReceiptAuditTests.test_removed_or_missing_flag_rejected) ... ok\ntest_transaction_index_conflict (test_audit.ReceiptAuditTests.test_transaction_index_conflict) ... ok\ntest_transaction_limit_before_network (test_audit.ReceiptAuditTests.test_transaction_limit_before_network) ... ok\ntest_transport_read_bound_headers_and_rpc_envelope (test_audit.ReceiptAuditTests.test_transport_read_bound_headers_and_rpc_envelope) ... ok\ntest_transport_rejects_other_methods_before_open (test_audit.ReceiptAuditTests.test_transport_rejects_other_methods_before_open) ... ok\ntest_two_transactions_and_conflict_precedence (test_audit.ReceiptAuditTests.test_two_transactions_and_conflict_precedence) ... ok\ntest_uppercase_hex_fields_normalize (test_audit.ReceiptAuditTests.test_uppercase_hex_fields_normalize) ... ok\ntest_wrong_chain_stops_before_receipts (test_audit.ReceiptAuditTests.test_wrong_chain_stops_before_receipts) ... ok\ntest_wrong_requested_transaction_rejected (test_audit.ReceiptAuditTests.test_wrong_requested_transaction_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 33 tests in 0.093s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-4/tools/transfer-receipt-audit",
+    "-p",
+    "test_audit.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 33,
+  "checked_at": "2026-10-13T11:41:11.420647+00:00",
+  "workspace": "test/scratch/round-21-mirror"
+}

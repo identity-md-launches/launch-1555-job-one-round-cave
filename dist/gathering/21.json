@@ -1,1 +1,30 @@
-{"name":"Not painted yet","image":"https://api.imd.fun/artifacts/9cbb7bb2a41efa92e010921f287819c9ffb02c4375fa9496c8468701d8e00cc5","attributes":[{"trait_type":"Cave","value":"Base"}]}
+{
+  "name": "Three Kept Together",
+  "image": "https://api.imd.fun/artifacts/14c07a9c84fbc0c070a751f85695d963ad9b729268c61f97da388a53566bb90d",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Gathering"
+    },
+    {
+      "trait_type": "Number",
+      "value": 21
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "ZTO proof manifest handoff"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Three earth stones travel inside one charcoal loop without losing their place."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Gathering"
+    }
+  ]
+}

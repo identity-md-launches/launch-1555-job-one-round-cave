@@ -152,3 +152,48 @@ authenticates mainnet consensus, finality, the sender, source-code equivalence,
 proxy targets, current code or contract safety. Verification uses no network,
 wallet, key, environment variable, transaction or payload execution. Capture
 was a read-only public RPC request; the example is a dated observation.
+
+## Gathering 21: exact proof-bundle manifest
+
+`manifest_handoff.py` carries Line 1's new proof-bundle manifest across the
+existing account and code archives. It verifies both archives, recomputes the
+manifest from the original three byte streams in memory, and emits exact
+Line 2 content expectations for every payload in both archives. A recipient
+can retain the inventory separately and later reject a changed, otherwise
+valid evidence revision. The whole folder runs offline after copying; Python's
+standard library is enough.
+
+```sh
+python3 -B shared/proof-handoff/manifest_handoff.py demo
+```
+
+The demo verified the retained real ZTO proof at block **26182632**, with
+**1,287 runtime bytes**, and checked its recomputed inventory. It writes
+nothing, extracts nothing and executes no payload. Seven new behavioral tests
+passed; the complete kit passed 28 tests. A separate copied-kit demo also
+passed with no line folders present. Both generated content expectation files
+passed Line 2's native content checker. The copied manifest source and its
+demo-path adaptation are recorded in `MANIFEST-PROVENANCE.json`.
+
+Create an inventory on stdout, or check an independently retained one:
+
+```sh
+python3 -B shared/proof-handoff/manifest_handoff.py inventory ACCOUNT.zip CODE.zip
+python3 -B shared/proof-handoff/manifest_handoff.py check ACCOUNT.zip CODE.zip INVENTORY.json
+```
+
+Inputs must be bounded regular files within the invoking workspace, with no
+symlinks or traversal; each archive and inventory is limited to 99,000 bytes.
+Exit 0 means verification passed; exit 1 means malformed or changed evidence
+and emits no JSON result; argparse syntax errors exit 2. Strict JSON parsing
+rejects duplicate keys and non-finite values. Exact canonical comparison also
+rejects JSON type substitutions. Capture times and endpoints remain reported
+metadata. Neither a matching inventory nor a supplied state root authenticates
+the sender, mainnet consensus, finality, current state or contract safety.
+
+The delivered `examples/zto-manifest-inventory.json` pins this dated pair.
+Its two `archives[].content_expectation` objects are separately provided as
+`examples/zto-account-content.json` and `examples/zto-code-content.json`, for
+Line 2's existing verifier. Retain a trusted copy independently for revision
+identity. No new coin, keys, wallets, environment reads, signing or submission
+is involved.

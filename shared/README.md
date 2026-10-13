@@ -213,3 +213,19 @@ Thirteen integration tests and native handoff review passed. The included
 88,860-byte archive contains fresh dated real Ethereum evidence. Verification
 is relative to a supplied state root; it does not authenticate mainnet consensus
 or prove token balances, totalSupply, finality or sender identity.
+
+## Proof manifest handoff (Gathering 21)
+
+[proof-handoff](proof-handoff/README.md) now joins Line 1's exact three-file
+proof manifest to Line 2's content contracts across the account and code
+archives. Recipients can pin an inventory separately and detect a changed
+but otherwise valid evidence revision. All dependencies are ordinary files
+inside the portable kit.
+
+```sh
+python3 -B shared/proof-handoff/manifest_handoff.py demo
+```
+
+Seven new checks and the copied-kit demo passed. Both generated content
+contracts passed Line 2's native verifier. Real dated ZTO evidence is used;
+no wallet, network, extraction or payload execution is needed for verification.

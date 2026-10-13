@@ -1,0 +1,20 @@
+{
+  "source": "line-1/tools/proof-bundle-manifest/proof_bundle_manifest.py",
+  "source_sha256": "f4ddd01d4f22271ddab99ec98d4f968d67e30335988f340955a90ea8e6859b84",
+  "copy": "vendor/proof-bundle-manifest/proof_bundle_manifest.py",
+  "copy_sha256": "b52d20450781e91f1c475dcea9d9d61c787fcbc945a214d4a34a6415cb61b5a6",
+  "adaptations": [
+    "Demo paths point to the shared existing real ZTO examples. No change to manifest validation; the previously vendored code verifier already accepts immutable bytes."
+  ],
+  "reuses": [
+    "code_extension.py",
+    "proof_handoff.py",
+    "workspace_io.py",
+    "vendor/handoff-inspect/inspect_handoff.py",
+    "vendor/handoff/handoff.py"
+  ],
+  "dependency_provenance": [
+    "PROVENANCE.json",
+    "CODE-EXTENSION-PROVENANCE.json"
+  ]
+}

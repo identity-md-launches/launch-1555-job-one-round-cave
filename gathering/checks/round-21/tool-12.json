@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_changed_code_bundle_is_rejected (test_proof_bundle_manifest.ManifestTests.test_changed_code_bundle_is_rejected) ... ok\ntest_cli_emits_one_valid_report_without_network (test_proof_bundle_manifest.ManifestTests.test_cli_emits_one_valid_report_without_network) ... ok\ntest_cli_failure_does_not_emit_partial_json (test_proof_bundle_manifest.ManifestTests.test_cli_failure_does_not_emit_partial_json) ... ok\ntest_retained_bundle_is_offline_and_bound (test_proof_bundle_manifest.ManifestTests.test_retained_bundle_is_offline_and_bound) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.138s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-1/tools/proof-bundle-manifest",
+    "-p",
+    "test_proof_bundle_manifest.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 4,
+  "checked_at": "2026-10-13T11:40:48.307534+00:00",
+  "workspace": "test/scratch/round-21-mirror"
+}

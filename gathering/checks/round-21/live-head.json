@@ -1,0 +1,13 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"captured_at\": \"2026-10-13T11:46:09Z\",\n  \"endpoint\": \"https://eth.drpc.org\",\n  \"method\": \"eth_blockNumber\",\n  \"params\": [],\n  \"result\": \"0x18f86bf\"\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-1/tools/rpc-snapshot/rpc_snapshot.py",
+    "--rpc",
+    "https://eth.drpc.org"
+  ],
+  "checked_at": "2026-10-13T11:46:09.714139+00:00"
+}

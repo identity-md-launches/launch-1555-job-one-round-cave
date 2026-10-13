@@ -1,0 +1,21 @@
+{
+  "exact": true,
+  "files": [
+    {
+      "bytes": 34506,
+      "path": "evidence/account-proof.json",
+      "sha256": "6ae76bdb112c7372002731f3e4e8b6ac44597a5ec95f1d31b6cd664989154c18"
+    },
+    {
+      "bytes": 52008,
+      "path": "evidence/snapshot.json",
+      "sha256": "9907516fe746b4b99cc921547730391b2d6b35b0ea6efaa7f7fc706e6c5701e9"
+    },
+    {
+      "bytes": 1442,
+      "path": "review/account.json",
+      "sha256": "490b78c11a1384c30bdbf7181f1d99c3586db4ea5d79b5e69693ab2eeef36e22"
+    }
+  ],
+  "format": "handoff-content-expectation-v1"
+}

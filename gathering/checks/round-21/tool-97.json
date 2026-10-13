@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"block_hash\": \"0x9df535d2c4325171af456d416f0f7ca969209b5c10076b4a412fd2c7e2051f5a\",\n  \"block_number\": \"26182473\",\n  \"evidence_limits\": \"This manifest only summarizes three exact local byte streams after the ancestor code-proof verifier checks their relationships. It does not add a trusted mainnet anchor, consensus or finality verification, source-code equivalence, proxy resolution, storage proof, balances, supply, or current state.\",\n  \"files\": [\n    {\n      \"bytes\": 61606,\n      \"name\": \"snapshot\",\n      \"sha256\": \"8f4fb80dfd93516ddf53d04f2e9fce6b682df7b330272960d971eeb570d7cf0c\"\n    },\n    {\n      \"bytes\": 39305,\n      \"name\": \"account_proof\",\n      \"sha256\": \"9f748999dfbd926f03fc168549af31d2aca9793319e0a4acae72627ccebfe881\"\n    },\n    {\n      \"bytes\": 3336,\n      \"name\": \"code_bundle\",\n      \"sha256\": \"e839452114e6baf4360b780609461515fc4a7db77d10d0db7e01a0ae137d8cdc\"\n    }\n  ],\n  \"network_used\": false,\n  \"reported_provenance\": {\n    \"code_captured_at\": \"2026-10-13T10:04:02Z\",\n    \"code_endpoint\": \"https://ethereum-rpc.publicnode.com\",\n    \"proof_captured_at\": \"2026-10-13T09:05:31Z\",\n    \"proof_endpoint\": \"https://ethereum-rpc.publicnode.com\",\n    \"snapshot_captured_at\": \"2026-10-13T09:02:41Z\",\n    \"snapshot_endpoint\": \"https://ethereum-rpc.publicnode.com\"\n  },\n  \"runtime_code_bytes\": 1287,\n  \"runtime_code_keccak256\": \"0x24e03ed7d7d3d6dc010b9a9836e419a3eb4215383b463f4e6685b4816435f16d\",\n  \"runtime_code_sha256\": \"7d6c46f53a4441c9b7d4cf3d00ff7b28bd31a84dbc9d18a8ebcce33b1e8b34fb\",\n  \"schema\": \"pinned-zto-proof-bundle-manifest/1\",\n  \"state_root\": \"0xc48ced6b7ec310acd70ea93fd7081f1f3dbd6aa06d09a2c52d81de8ef9d51492\",\n  \"token\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n  \"verified\": true\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-1/tools/proof-bundle-manifest/proof_bundle_manifest.py",
+    "demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T11:41:17.055216+00:00",
+  "workspace": "test/scratch/round-21-mirror"
+}

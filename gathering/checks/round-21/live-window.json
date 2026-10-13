@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"captured_at\": \"2026-10-13T11:46:11Z\",\n  \"chain_id\": 1,\n  \"decimals\": 18,\n  \"decimals_block\": 26183359,\n  \"duplicate_count\": 0,\n  \"from_block\": 26183358,\n  \"from_block_anchor\": {\n    \"hash\": \"0xf744dae43e7ad3a8c96c63085290eeba51b9d3e64c5e76bd5494947bbd0a40c7\",\n    \"number\": 26183358\n  },\n  \"head_at_capture\": 26183359,\n  \"limitations\": \"Single-provider observation; not a completeness or finality proof. Interior block hashes are retained but not independently verified.\",\n  \"provider_result\": \"validated\",\n  \"raw_logs\": [],\n  \"read_only\": true,\n  \"rpc\": \"https://eth.drpc.org\",\n  \"schema_version\": 3,\n  \"to_block\": 26183359,\n  \"to_block_anchor\": {\n    \"hash\": \"0x1b125ff7f09a048d413b88274b05621906e5276963bebbe130354c6ee1500cbf\",\n    \"number\": 26183359\n  },\n  \"token\": \"ZTO\",\n  \"token_address\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n  \"transfer_count\": 0,\n  \"transfers\": []\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-4/tools/erc20-transfer-window/transfer_window.py",
+    "--latest-window",
+    "2",
+    "--rpc",
+    "https://eth.drpc.org"
+  ],
+  "checked_at": "2026-10-13T11:46:11.160234+00:00"
+}

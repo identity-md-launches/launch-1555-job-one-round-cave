@@ -1,0 +1,17 @@
+{
+  "archive_sha256": "0dc59baa9961d262f9e473613d3b45c65b958c882187b408a7c9edb9a1a60928",
+  "changed": [],
+  "content_passed": true,
+  "exact": true,
+  "expectation_sha256": "7020d616f6c5fb7206c96822299c93ede895ad152776ebb838b74f7c41103992",
+  "format": "handoff-content-check-v1",
+  "matched": [
+    "evidence/account-proof.json",
+    "evidence/snapshot.json",
+    "review/account.json"
+  ],
+  "missing": [],
+  "note": "Integrity and expected bytes were checked; authenticity depends on independently trusted expectations. No payload was extracted or executed.",
+  "unexpected": [],
+  "verified": true
+}

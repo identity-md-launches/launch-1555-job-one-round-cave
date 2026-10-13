@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "records": 185,
+  "line_suites": 64,
+  "line_tests": 901,
+  "line_demos": 65,
+  "shared_tests": 28,
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "png_format": "8-bit RGB PNG",
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_format": "baseline JPEG",
+  "wall_sha256": "14c07a9c84fbc0c070a751f85695d963ad9b729268c61f97da388a53566bb90d",
+  "unmet_visual_requirements": []
+}

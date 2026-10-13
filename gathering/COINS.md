@@ -1,8 +1,9 @@
 none
 
-All four lines work with public reads and offline files. ZTO is the real
-first-choice token used for account, code and transfer evidence; IMD remains
-the second choice. No line's capability requires its own coin, payment,
-Uniswap v4 hook or pool. A new coin would add no necessary function.
-No launch order, Sepolia deployment order or request-check POST is justified.
-Nothing was signed, sent, paid or posted.
+All four lines work through public Ethereum reads or offline files. Their
+capabilities do not require a new coin, payment or Uniswap v4 hook. ZTO is the
+real first-choice token for proof, code and transfer evidence; IMD remains the
+second choice. A new asset would add no necessary function.
+
+No coin launch, Sepolia contract deployment or request-check POST is justified.
+Nothing was signed, submitted, paid or posted.

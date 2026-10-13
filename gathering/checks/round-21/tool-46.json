@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_asserted_nonzero_start (test_sequence.SequenceTests.test_asserted_nonzero_start) ... ok\ntest_context_strictness (test_sequence.SequenceTests.test_context_strictness) ... ok\ntest_duplicate_json_members_and_bad_json (test_sequence.SequenceTests.test_duplicate_json_members_and_bad_json) ... ok\ntest_duplicates_not_selected_or_discounted (test_sequence.SequenceTests.test_duplicates_not_selected_or_discounted) ... ok\ntest_exact_coverage_and_original_order (test_sequence.SequenceTests.test_exact_coverage_and_original_order) ... ok\ntest_exhausted_nonce_fails_diagnostic (test_sequence.SequenceTests.test_exhausted_nonce_fails_diagnostic) ... ok\ntest_fingerprint_normalizes_hex_case_only (test_sequence.SequenceTests.test_fingerprint_normalizes_hex_case_only) ... ok\ntest_independent_failures_retained (test_sequence.SequenceTests.test_independent_failures_retained) ... ok\ntest_large_gap_has_one_range (test_sequence.SequenceTests.test_large_gap_has_one_range) ... ok\ntest_limits (test_sequence.SequenceTests.test_limits) ... ok\ntest_math_does_not_overflow (test_sequence.SequenceTests.test_math_does_not_overflow) ... ok\ntest_one_wei_short_with_value_included (test_sequence.SequenceTests.test_one_wei_short_with_value_included) ... ok\ntest_reordered_is_not_silently_sorted (test_sequence.SequenceTests.test_reordered_is_not_silently_sorted) ... ok\ntest_signed_or_malformed_envelope_rejected (test_sequence.SequenceTests.test_signed_or_malformed_envelope_rejected) ... ok\ntest_uint256_transaction_bound (test_sequence.SequenceTests.test_uint256_transaction_bound) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.009s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-3/tools/transaction-sequence",
+    "-p",
+    "test_sequence.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 15,
+  "checked_at": "2026-10-13T11:40:59.209104+00:00",
+  "workspace": "test/scratch/round-21-mirror"
+}
