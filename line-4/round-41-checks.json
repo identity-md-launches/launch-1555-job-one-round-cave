@@ -1,0 +1,50 @@
+{
+  "number": 41,
+  "tests": [
+    {
+      "command": "python3 -B line-4/tools/transfer-receipt-audit/test_audit.py",
+      "passed": 33
+    },
+    {
+      "command": "python3 -B line-4/tools/transfer-transaction-groups/test_groups.py",
+      "passed": 15
+    },
+    {
+      "command": "python3 -B line-4/tools/transfer-crosscheck/test_crosscheck.py",
+      "passed": 21
+    },
+    {
+      "command": "python3 -B line-4/tools/strict-rpc-json/test_strict_rpc.py",
+      "passed": 9
+    }
+  ],
+  "total_tests_passed": 78,
+  "demo_status": "matching",
+  "evidence_replay_status": "matching",
+  "live_rpc": "https://ethereum-rpc.publicnode.com",
+  "live_observed_at": "2026-10-13T11:31:23+00:00",
+  "live_matching_transfers": 3,
+  "returned_receipt_block_decimal": 26177309,
+  "goal_byte_unchanged": true,
+  "old_dist_files_byte_unchanged": true,
+  "record_count": 41,
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "png_sha256": "c76eadcbdc6a8babbc5de2721368edde59eab464045f8d24af8ed7bfdd1d72a7",
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_bytes": 77393,
+  "changed_paths_in_scope": true,
+  "new_ordinary_files_under_100000_bytes": true,
+  "outputs_untracked": true,
+  "new_image_paths": [
+    "artifacts/line-4/wall.png",
+    "artifacts/line-4/wall-v22.png",
+    "dist/line-4/41.jpg"
+  ],
+  "limitations": "Local checks only; behavior and artwork are not independently certified."
+}

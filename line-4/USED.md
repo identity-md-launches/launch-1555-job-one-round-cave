@@ -366,3 +366,32 @@
   wallet or secret was accessed; no transaction signed or submitted, payment,
   external message or deployment performed. Only named wall aliases and the
   required record JPEG remain as new image files.
+
+## Round 41
+
+- Kept GOAL.md and every older record unchanged. Gathering 20 reported no
+  outstanding line failure. Added a standard-library transaction-receipt audit
+  using transaction groups, strict raw-log validation, the bounded workspace
+  reader, strict RPC decoder and the existing public opener/endpoint validator.
+  Its own two-method allowlist leaves ancestors' permissions unchanged.
+- Reused the retained real PublicNode three-transfer ZTO capture. A fresh
+  PublicNode chain ID and transaction receipt read at 2026-10-13 11:31:23 UTC
+  corroborated all three events, transaction position and block hash. Decoded
+  returned blockNumber back to 26177309. Kept all 15 receipt logs in the
+  projected public evidence; 12 other events are counted only. No invented
+  observation was substituted. This does not prove receipt inclusion, complete
+  logs, entirely omitted transactions, balances, swaps, prices or finality.
+- Thirty-three new behavioral tests passed, including socket-disabled replay
+  and synthetic adverse mutations confined to tests. Offline demo and evidence
+  replay passed. Three inherited dependency suites also passed: 15 transaction
+  group, 21 crosscheck and 9 strict RPC tests, for 78 tests in total.
+  No dependency installed.
+- Recovered record 40's wall and verified its SHA-256. The installed imagegen
+  tool supplied three ochre pebbles inside a bowl. Adapted the read Node
+  compositor and reused the read standard-library thumbnail encoder. Exactly
+  6,026 pixels changed inside vacant lower-right stone (990,1050,155,95);
+  zero changed outside. The generated motif was overwritten by the full wall.
+- Inspected finished 1254px square PNG and 512px JPEG; counted both inherited
+  Pepe hands and the handprint as five digits each. Dimensions, formats and
+  visual limitations are recorded. No environment, key, wallet or secret read;
+  no transaction signed/submitted, deployment, payment or external message.
